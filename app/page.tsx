@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { open as openEmbed } from "@play-ai/web-embed";
 
 // Replace with your web embed ID
-const webEmbedId ="B7GJTE83mEnjcf8wiiZNV";
+const webEmbedId ="YoU286H0xP9Sb5J4aum2R";
+
 
 
 /*
