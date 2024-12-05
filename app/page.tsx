@@ -19,7 +19,7 @@ const webEmbedId ="YoU286H0xP9Sb5J4aum2R";
  */
 
 export default function Home() {
-  const [text, setText] = useState("AI coach from superbiller");
+  const [text, setText] = useState("Your AI coach");
 
   // Define your events here
   const events = [
@@ -45,10 +45,35 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <div className="flex justify-center items-center h-[70vh]">
-        <div className="font-medium text-2xl">{text}</div>
+    <div className="flex flex-col justify-center items-center h-[90vh] bg-gray-50">
+      {/* Logo from the Internet */}
+      <img
+        src="https://media.licdn.com/dms/image/v2/C560BAQENKPAX_HkK-A/company-logo_200_200/company-logo_200_200/0/1630652411649/superbiller_com_logo?e=1741219200&v=beta&t=P5BjKK3gMAJW58cLGAggn1krdUbhy6XSziHAZtaD2Lw" // Replace with the online logo URL
+        alt="Logo"
+        className="w-24 h-24 mb-4"
+      />
+
+      {/* Main Text */}
+      <h1 className="text-2xl font-bold text-red-500">{text}</h1>
+
+      {/* Subtext */}
+      <p className="text-md text-gray-500 mt-2">
+        for smarter recruitment decisions
+      </p>
+
+      {/* Microphone Icon */}
+      <div className="absolute bottom-8">
+        <button className="p-4 rounded-full bg-black text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+            className="w-6 h-6"
+          >
+            <path d="M8 12a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v4a3 3 0 0 0 3 3zm3.5-3a.5.5 0 0 1 1 0 4.5 4.5 0 0 1-4 4.473V15.5a.5.5 0 0 1-1 0v-2.027A4.5 4.5 0 0 1 3.5 9a.5.5 0 0 1 1 0 3.5 3.5 0 0 0 7 0z" />
+          </svg>
+        </button>
       </div>
-    </>
+    </div>
   );
 }
