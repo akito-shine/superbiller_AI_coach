@@ -62,18 +62,6 @@ export default function Home() {
       </p>
 
       {/* Microphone Icon */}
-      <div className="absolute bottom-8">
-        <button className="p-4 rounded-full bg-black text-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-            className="w-6 h-6"
-          >
-            <path d="M8 12a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v4a3 3 0 0 0 3 3zm3.5-3a.5.5 0 0 1 1 0 4.5 4.5 0 0 1-4 4.473V15.5a.5.5 0 0 1-1 0v-2.027A4.5 4.5 0 0 1 3.5 9a.5.5 0 0 1 1 0 3.5 3.5 0 0 0 7 0z" />
-          </svg>
-        </button>
-      </div>
     </div>
   );
 }
